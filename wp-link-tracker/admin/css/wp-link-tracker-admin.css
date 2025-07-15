@@ -1,0 +1,197 @@
+/* WP Link Tracker Admin Styles */
+.wplinktracker-dashboard {
+    margin-top: 20px;
+}
+
+.wplinktracker-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.wplinktracker-date-range {
+    flex: 1;
+    min-width: 300px;
+}
+
+.wplinktracker-date-actions {
+    margin-top: 10px;
+}
+
+.wplinktracker-date-actions .button {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.wplinktracker-refresh {
+    margin-left: 20px;
+}
+
+.wplinktracker-dashboard-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.wplinktracker-summary-box {
+    flex: 1;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    min-width: 200px;
+}
+
+.wplinktracker-summary-box:last-child {
+    margin-right: 0;
+}
+
+.wplinktracker-summary-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #23282d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.wplinktracker-summary-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0073aa;
+    line-height: 1.2;
+}
+
+.wplinktracker-dashboard-charts,
+.wplinktracker-dashboard-tables,
+.wplinktracker-dashboard-devices {
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.wplinktracker-chart-container,
+.wplinktracker-table-container {
+    flex: 1;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    min-width: 300px;
+}
+
+.wplinktracker-chart-container:last-child,
+.wplinktracker-table-container:last-child {
+    margin-right: 0;
+}
+
+.wplinktracker-chart-container h3,
+.wplinktracker-table-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #23282d;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#wplinktracker-custom-date-range {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#wplinktracker-custom-date-range input[type="date"] {
+    margin-right: 10px;
+}
+
+.wplinktracker-table-content {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.wplinktracker-loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.wplinktracker-error {
+    text-align: center;
+    padding: 20px;
+    color: #d63638;
+    background: #fcf0f1;
+    border: 1px solid #d63638;
+    border-radius: 4px;
+}
+
+/* Copy button styles */
+.copy-to-clipboard {
+    font-size: 11px;
+    padding: 2px 8px;
+    margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .wplinktracker-dashboard-devices {
+        flex-direction: column;
+    }
+    
+    .wplinktracker-dashboard-devices .wplinktracker-chart-container {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 782px) {
+    .wplinktracker-dashboard-header {
+        flex-direction: column;
+    }
+    
+    .wplinktracker-refresh {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .wplinktracker-dashboard-summary,
+    .wplinktracker-dashboard-charts,
+    .wplinktracker-dashboard-tables,
+    .wplinktracker-dashboard-devices {
+        flex-direction: column;
+    }
+    
+    .wplinktracker-summary-box,
+    .wplinktracker-chart-container,
+    .wplinktracker-table-container {
+        margin-right: 0;
+        min-width: auto;
+    }
+    
+    .wplinktracker-date-actions .button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+/* Debug styles */
+.wplinktracker-debug-info {
+    background: #f0f0f1;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+    font-family: monospace;
+    font-size: 12px;
+    white-space: pre-wrap;
+}
